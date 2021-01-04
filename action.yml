@@ -12,6 +12,9 @@ inputs:
   github_token:
     description: Github token
     required: true
+  project:
+    description: Project type
+    required: false
   build_script:
     description: Custom build script
     required: false

@@ -91,6 +91,7 @@ const runAction = () => {
   }
 
   setEnvVariable('BUILD', getEnvVariable('build'))
+  setEnvVariable('PROJECT', getEnvVariable('project'))
   setEnvVariable('PROJECT_NAME', getEnvVariable('project_name'))
   setEnvVariable('CI', getEnvVariable('ci'))
 
