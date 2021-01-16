@@ -95,6 +95,7 @@ const runAction = () => {
   setEnvVariable('PROJECT_NAME', getEnvVariable('project_name'))
   setEnvVariable('CI', getEnvVariable('ci'))
   setEnvVariable('GENERATE_SOURCEMAP', getEnvVariable('generate_sourcemap') || false)
+  setEnvVariable('ENABLE_AUTH', getEnvVariable('enable_auth') || false)
 
   writeFileSync('.npmrc', `@fortawesome:registry=https://npm.fontawesome.com/\n//npm.fontawesome.com/:_authToken=${getEnvVariable('fontawesome_token')}`)
 
