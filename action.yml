@@ -40,6 +40,14 @@ inputs:
     description: CI check
     required: false
     default: false
+  generate_sourcemap:
+    description: Generate sourcemap
+    required: false
+    default: false
+  enable_auth:
+    description: Enable auth
+    required: false
+    default: false
 
 runs:
   using: node12
