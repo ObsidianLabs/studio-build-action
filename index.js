@@ -96,6 +96,7 @@ const runAction = () => {
   setEnvVariable('CI', getEnvVariable('ci'))
   setEnvVariable('GENERATE_SOURCEMAP', getEnvVariable('generate_sourcemap') || false)
   setEnvVariable('ENABLE_AUTH', getEnvVariable('enable_auth') || false)
+  setEnvVariable('REACT_APP_MIXPANEL_TOKEN', getEnvVariable('react_app_mixpanel_token'))
 
   writeFileSync('.npmrc', `@fortawesome:registry=https://npm.fontawesome.com/\n//npm.fontawesome.com/:_authToken=${getEnvVariable('fontawesome_token')}`)
 
