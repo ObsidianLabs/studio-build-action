@@ -48,6 +48,9 @@ inputs:
     description: Enable auth
     required: false
     default: false
+  react_app_mixpanel_token:
+    description: Mixpanel
+    required: false
 
 runs:
   using: node12
