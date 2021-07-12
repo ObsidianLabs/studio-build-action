@@ -51,6 +51,9 @@ inputs:
   react_app_mixpanel_token:
     description: Mixpanel
     required: false
+  premium_editor:
+    description: Premium Editor path
+    required: false
 
 runs:
   using: node12
