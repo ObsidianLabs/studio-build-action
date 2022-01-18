@@ -54,6 +54,15 @@ inputs:
   premium_editor:
     description: Premium Editor path
     required: false
+  build_id:
+    description: Github Action Build ID
+    required: false
+  build_time:
+    description: Github Action Build Time
+    required: false
+  commit_id:
+    description: Latest Commit ID
+    required: false
 
 runs:
   using: node12

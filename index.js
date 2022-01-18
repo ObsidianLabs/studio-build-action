@@ -98,6 +98,9 @@ const runAction = () => {
   setEnvVariable('ENABLE_AUTH', getEnvVariable('enable_auth') || false)
   setEnvVariable('REACT_APP_MIXPANEL_TOKEN', getEnvVariable('react_app_mixpanel_token'))
   setEnvVariable('PREMIUM_EDITOR', getEnvVariable('premium_editor'))
+  setEnvVariable('BUILD_ID', getEnvVariable('build_id'))
+  setEnvVariable('COMMIT_ID', getEnvVariable('commit_id'))
+  setEnvVariable('BUILD_TIME', getEnvVariable('build_time') || new Date().toString())
 
   writeFileSync('.npmrc', `@fortawesome:registry=https://npm.fontawesome.com/\n//npm.fontawesome.com/:_authToken=${getEnvVariable('fontawesome_token')}`)
 
