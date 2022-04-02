@@ -100,7 +100,7 @@ const runAction = () => {
   setEnvVariable('PREMIUM_EDITOR', getEnvVariable('premium_editor'))
   setEnvVariable('BUILD_ID', getEnvVariable('build_id'))
   setEnvVariable('COMMIT_ID', getEnvVariable('commit_id').toString())
-  setEnvVariable('BUILD_TIME', getEnvVariable('build_time') || new Date().getTime().toString())
+  setEnvVariable('BUILD_TIME', new Date(getEnvVariable('build_time')).toString() || new Date().toString())
 
   writeFileSync('.npmrc', `@fortawesome:registry=https://npm.fontawesome.com/\n//npm.fontawesome.com/:_authToken=${getEnvVariable('fontawesome_token')}`)
 
